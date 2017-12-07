@@ -13,14 +13,15 @@ matrix:
   fast_finish: true
   include:
     - php: 7.1
-      env: TRANSPORT=jackrabbit COMPOSER_INSTALL=1 STABILITY=dev
+      env: TRANSPORT=jackrabbit COMPOSER_INSTALL=1
     - php: 7.1
-      env: TRANSPORT=doctrine_dbal COMPOSER_INSTALL=1 STABILITY=dev
+      env: TRANSPORT=doctrine_dbal COMPOSER_INSTALL=1
 
 env:
   global:
     - SYMFONY_PHPUNIT_DIR=.phpunit SYMFONY_PHPUNIT_REMOVE="symfony/yaml" SYMFONY_PHPUNIT_VERSION=5.7
     - SYMFONY_DEPRECATIONS_HELPER=weak
+    - STABILITY=dev
   matrix:
     - TRANSPORT=jackrabbit
     - TRANSPORT=doctrine_dbal
