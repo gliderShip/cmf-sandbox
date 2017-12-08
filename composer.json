@@ -17,7 +17,7 @@
         "psr-4": { "Tests\\": "tests/" }
     },
     "require": {
-        "php": "^5.6|^7.0",
+        "php": "^7.1",
         "symfony/symfony": "^3.3",
         "symfony/assetic-bundle": "^2.8",
         "symfony/swiftmailer-bundle": "^2.3.10",
@@ -40,7 +40,7 @@
         "doctrine/doctrine-cache-bundle": "^1.2",
         "doctrine/phpcr-odm": "^1.4",
 
-        "sonata-project/cache-bundle": "^2.1",
+        "sonata-project/cache-bundle": "^2.0",
         "sonata-project/translation-bundle": "2.1.0",
         "sonata-project/doctrine-phpcr-admin-bundle": "^2.0",
 
@@ -49,7 +49,8 @@
         "eko/feedbundle": "^1.2.7",
         "lunetics/locale-bundle": "^2.5",
         "burgov/key-value-form-bundle": "^1.4",
-        "egeloen/ckeditor-bundle": "^4.0"
+        "egeloen/ckeditor-bundle": "^4.0",
+        "sonata-project/cache": "dev-master as 1.0.3"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
