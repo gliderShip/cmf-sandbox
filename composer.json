@@ -50,7 +50,7 @@
         "lunetics/locale-bundle": "^2.5",
         "burgov/key-value-form-bundle": "^1.4",
         "egeloen/ckeditor-bundle": "^4.0",
-        "sonata-project/cache": "^1.0"
+        "sonata-project/cache": "^1.0.4"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
