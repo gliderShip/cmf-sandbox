@@ -90,5 +90,8 @@
         "branch-alias": {
             "dev-master": "2.0-dev"
         }
+    },
+    "conflict": {
+        "sonata-project/cache": "<1.1.1"
     }
 }
