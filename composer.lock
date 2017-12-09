@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9d036fc3ce5a0fda191fe07690ca440",
+    "content-hash": "3bef5930a2526fbcf325ae109b557c19",
     "packages": [
         {
             "name": "aferrandini/urlizer",
@@ -3379,16 +3379,16 @@
         },
         {
             "name": "sonata-project/cache",
-            "version": "dev-master",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/cache.git",
-                "reference": "df58783fdf5fc8bcf7a7a40e669b1f789957fcdb"
+                "reference": "0d2849ccb08a74cc9eed34820e5bb1486e56c4b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/cache/zipball/df58783fdf5fc8bcf7a7a40e669b1f789957fcdb",
-                "reference": "df58783fdf5fc8bcf7a7a40e669b1f789957fcdb",
+                "url": "https://api.github.com/repos/sonata-project/cache/zipball/0d2849ccb08a74cc9eed34820e5bb1486e56c4b0",
+                "reference": "0d2849ccb08a74cc9eed34820e5bb1486e56c4b0",
                 "shasum": ""
             },
             "require": {
@@ -3396,11 +3396,11 @@
                 "psr/log": "^1.0"
             },
             "require-dev": {
-                "doctrine/orm": "^2.5",
-                "doctrine/phpcr-odm": "^1.4",
-                "jackalope/jackalope-doctrine-dbal": "^1.2",
-                "predis/predis": "^1.1",
-                "sllh/php-cs-fixer-styleci-bridge": "^2.1",
+                "doctrine/orm": "^2.2",
+                "doctrine/phpcr-odm": "^1.0",
+                "jackalope/jackalope-doctrine-dbal": "^1.0",
+                "predis/predis": "^0.8",
+                "sllh/php-cs-fixer-styleci-bridge": "^2.0",
                 "symfony/phpunit-bridge": "^3.3"
             },
             "suggest": {
@@ -3413,7 +3413,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.x-dev"
+                    "dev-master": "1.x-dev"
                 }
             },
             "autoload": {
@@ -3430,10 +3430,6 @@
                     "name": "Thomas Rabaix",
                     "email": "thomas.rabaix@gmail.com",
                     "homepage": "https://sonata-project.org/"
-                },
-                {
-                    "name": "Sonata Community",
-                    "homepage": "https://github.com/sonata-project/cache/contributors"
                 }
             ],
             "description": "Cache library",
@@ -3444,7 +3440,7 @@
                 "mongodb",
                 "redis"
             ],
-            "time": "2017-12-07T01:00:05+00:00"
+            "time": "2017-12-08T09:18:43+00:00"
         },
         {
             "name": "sonata-project/cache-bundle",
@@ -6752,19 +6748,10 @@
             "time": "2017-11-07T14:16:22+00:00"
         }
     ],
-    "aliases": [
-        {
-            "alias": "1.0.3",
-            "alias_normalized": "1.0.3.0",
-            "version": "9999999-dev",
-            "package": "sonata-project/cache"
-        }
-    ],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "sonata-project/cache": 20
-    },
-    "prefer-stable": true,
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": "^7.1"
