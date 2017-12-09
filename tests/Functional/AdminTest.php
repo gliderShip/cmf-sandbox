@@ -91,9 +91,9 @@ class AdminTest extends WebTestCase
 
         $this->assertTrue(in_array($route, $this->verifiablePatterns));
 
-        $diffCountBefore = count(array_diff_assoc($this->verifiablePatterns, self::$testedPatterns));
+        $diffCountBefore = count(array_diff($this->verifiablePatterns, self::$testedPatterns));
         self::$testedPatterns[] = $route;
-        $diffCountAfter = count(array_diff_assoc($this->verifiablePatterns, self::$testedPatterns));
+        $diffCountAfter = count(array_diff($this->verifiablePatterns, self::$testedPatterns));
 
         // verify that at the end is nothing in diff
         $this->assertSame($diffCountBefore - 1, $diffCountAfter, 'Each admin should be verified.');
