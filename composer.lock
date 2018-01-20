@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3bef5930a2526fbcf325ae109b557c19",
+    "content-hash": "70e90db5a39274b9018b31d3c288327d",
     "packages": [
         {
             "name": "aferrandini/urlizer",
@@ -3444,41 +3444,45 @@
         },
         {
             "name": "sonata-project/cache-bundle",
-            "version": "2.3.1",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCacheBundle.git",
-                "reference": "cf9cce6dd1207ddbf89e4ce5ce9192476d36d87d"
+                "reference": "ccbcbfdb567b8ac462a02c553d9dc47c253c1692"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCacheBundle/zipball/cf9cce6dd1207ddbf89e4ce5ce9192476d36d87d",
-                "reference": "cf9cce6dd1207ddbf89e4ce5ce9192476d36d87d",
+                "url": "https://api.github.com/repos/sonata-project/SonataCacheBundle/zipball/ccbcbfdb567b8ac462a02c553d9dc47c253c1692",
+                "reference": "ccbcbfdb567b8ac462a02c553d9dc47c253c1692",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3 || ^7.0",
+                "php": "^5.6 || ^7.0",
                 "sonata-project/cache": "^1.0.3",
-                "symfony/config": "^2.2 || ^3.0",
-                "symfony/filesystem": "^2.2 || ^3.0",
-                "symfony/http-foundation": "^2.2 || ^3.0",
-                "symfony/process": "^2.2 || ^3.0",
-                "symfony/routing": "^2.2 || ^3.0",
-                "symfony/security": "^2.2 || ^3.0"
+                "symfony/config": "^2.8 || ^3.2",
+                "symfony/dependency-injection": "^2.8 || ^3.2 || ^4.0",
+                "symfony/filesystem": "^2.8 || ^3.2 || ^4.0",
+                "symfony/http-foundation": "^2.8 || ^3.2 || ^4.0",
+                "symfony/process": "^2.8 || ^3.2 || ^4.0",
+                "symfony/routing": "^2.8 || ^3.2 || ^4.0",
+                "symfony/security": "^2.8 || ^3.2 || ^4.0"
             },
             "require-dev": {
                 "doctrine/orm": "^2.2",
-                "php-mock/php-mock": "^0.1.1 || ^1.0",
-                "predis/predis": "^0.8",
+                "doctrine/phpcr-odm": "^1.0",
+                "jackalope/jackalope": "^1.0",
+                "jackalope/jackalope-doctrine-dbal": "^1.0",
+                "php-mock/php-mock": "^1.0",
+                "predis/predis": "^0.8 || ^1.0",
                 "sllh/php-cs-fixer-styleci-bridge": "^2.0",
-                "symfony/phpunit-bridge": "^2.7 || ^3.0"
+                "symfony/phpunit-bridge": "^3.3.12 || ^4.0"
             },
             "suggest": {
                 "doctrine/doctrine-bundle": "ORM support",
                 "doctrine/orm": "ORM support",
                 "doctrine/phpcr-bundle": "PHPCR ODM support",
                 "doctrine/phpcr-odm": "PHPCR ODM support",
-                "ext-apc": "Caching with ext/apc",
+                "ext-apcu": "Caching with ext/apcu",
                 "ext-memcached": "Caching with ext/memcached",
                 "predis/predis": "Install redis php"
             },
@@ -3490,11 +3494,8 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Sonata\\CacheBundle\\": ""
-                },
-                "exclude-from-classmap": [
-                    "Tests/"
-                ]
+                    "Sonata\\CacheBundle\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -3516,7 +3517,7 @@
             "keywords": [
                 "cache block"
             ],
-            "time": "2016-09-06T13:06:43+00:00"
+            "time": "2017-11-30T13:24:46+00:00"
         },
         {
             "name": "sonata-project/core-bundle",
@@ -6754,7 +6755,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.1"
+        "php": "^5.6 || ^7.0"
     },
     "platform-dev": []
 }
